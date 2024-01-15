@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    background-color: white;
+    width: 50%;
+    padding: 15px 25px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list-container {
+    display: flex;
+    width: 100%;
+
+}
+
+.whatToDo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    padding-top: 10px;
+}

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import './ToDoListComponent.css';
 
 const todolist = ['Learn Javascript', 'Learn React', 'Build a React App'];
 
@@ -11,11 +12,14 @@ const ToDoListComponent = () => {
             <input type="text" className="whatToDo" placeholder='Add New'></input>
             {lists.map((list, index) => (
                 <div className="list-container">
-                    <input type="checkBox" value="list"></input>
+                    <input type="checkBox" value={index}></input>
                     <li key={index}>{list}</li>
                 </div>
             ))}
-            <button><FontAwesomeIcon icon={faPlus} /></button>
+            <div className="btn-container">
+                <button><FontAwesomeIcon icon={faPlus} /></button>
+            </div>
+            
         </div>
 }
 
