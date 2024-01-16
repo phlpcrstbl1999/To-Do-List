@@ -10,14 +10,15 @@ const ToDoListComponent = () => {
     return <div className="container">
             {/* <h1>THINGS TO DO</h1> */}
             <input type="text" className="whatToDo" placeholder='Add New'></input>
-            {lists.map((list, index) => (
-                <div className="list-container">
-                    <input type="checkBox" value={index}></input>
-                    <li key={index}>{list}</li>
-                </div>
-            ))}
+            {lists.map((list, index) => <>
+                <label className="list-container">
+                        <input type="checkBox" value={index}></input>
+                        <li key={index}>{list}</li>
+                </label>
+            </>)}
             <div className="btn-container">
-                <button><FontAwesomeIcon icon={faPlus} /></button>
+                <button class="plus-btn"><FontAwesomeIcon icon={faPlus} /></button>
+                <p>{todolist.length} items left</p>
             </div>
             
         </div>

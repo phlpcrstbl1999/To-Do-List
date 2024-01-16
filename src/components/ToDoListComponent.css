@@ -13,8 +13,11 @@ li {
 
 .list-container {
     display: flex;
+    gap: 5px;
     width: 100%;
-
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
 
 .whatToDo {
@@ -25,4 +28,21 @@ li {
 
 .btn-container {
     padding-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.plus-btn {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.plus-btn:hover {
+    background-color:lightblue;
+   
 }
