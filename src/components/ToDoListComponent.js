@@ -63,7 +63,8 @@ const ToDoListComponent = () => {
                         
                 </label>
             ))}
-            <li  className='title' style={{ display: `${itemsLeft === 0 ? '' : 'none'}` }}>No ToDos</li>
+            {itemsLeft === 0 && <li className='title'>No ToDos</li>}
+
             <div className="footer">
                 <div className="btn-container">
                     <button className="plus-btn" onClick={handleAddWhatToDo}><FontAwesomeIcon icon={faPlus} /></button>
